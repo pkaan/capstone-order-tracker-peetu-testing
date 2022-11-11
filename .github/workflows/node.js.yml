@@ -18,6 +18,8 @@ jobs:
         node-version: 16
     - run: npm install
   #  - run: npm run build --if-present
+    - run: touch .env
+    - run: echo $PROD_ENV_FILE >> .env
     - run: npm run test:mocha --if-present
   
     # Static code analysis: Eslint. Checks programmatic and stylistic errors
