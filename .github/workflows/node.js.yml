@@ -25,6 +25,3 @@ jobs:
   
     # Static code analysis: Eslint. Checks programmatic and stylistic errors
     - run: npx eslint . --ext .js,.jsx,.ts,.tsx
-    
-   # Automated code formatting (all files)
-    - run: npx prettier --check .
